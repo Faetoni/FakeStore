@@ -7,8 +7,6 @@
 
 <script setup lang="ts">
   useHead({
-    titleTemplate: title => {
-      return `${title}`
-    }
+    title: 'FakeStore'
   })
 </script>

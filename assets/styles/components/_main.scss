@@ -1,0 +1,19 @@
+body {
+  font-size: 15px !important;
+}
+
+ .v-btn--icon.v-btn--size-default {
+   --v-btn-size: 15px !important;
+ }
+
+ .elevation-10 {
+   box-shadow: 0 0 2px #919eab4d, 0 12px 24px -4px #919eab1f !important;
+ }
+
+ .v-breadcrumbs-item--disabled {
+   opacity: 1 !important;
+ }
+
+ .text-ellipsis {
+   text-overflow: ellipsis;
+ }

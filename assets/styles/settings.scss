@@ -1,0 +1,100 @@
+// 👉 Typography custom variables
+$typography-h5-font-size: 1.125rem;
+$typography-body-1-font-size: 0.9375rem;
+$typography-body-1-line-height: 1.375rem;
+
+// 👉 Shadow opacities
+$shadow-key-umbra-opacity-custom: var(--v-shadow-key-umbra-opacity);
+$shadow-key-penumbra-opacity-custom: var(--v-shadow-key-penumbra-opacity);
+$shadow-key-ambient-opacity-custom: var(--v-shadow-key-ambient-opacity);
+
+// Component specific variables
+@forward 'vuetify/settings' with (
+  $container-max-widths: (
+    'md': 900px,
+    'lg': 1200px,
+    'xl': 1800px,
+    'xxl': 1800px
+  ),
+  $typography: (
+    'button': (
+      'letter-spacing': 0,
+      'text-transform': none
+    ),
+  ),
+  $button-height: 40px,
+
+  // 👉 Card
+  $card-title-font-size: $typography-h5-font-size,
+  $card-text-font-size: $typography-body-1-font-size,
+  $card-title-line-height: 1.65rem,
+  $card-text-line-height: 1.5,
+  $card-subtitle-opacity: 1,
+  $card-elevation: 10,
+  $card-border-radius: 5px,
+  $card-title-padding: 24px,
+  $card-text-padding: 24px,
+  $card-actions-padding: 24px,
+
+  // 👉 List item
+  $list-item-title-font-size: 15px,
+  $list-item-subtitle-font-size: 13px,
+  $list-item-nav-title-font-size: 15px,
+  $list-item-nav-title-font-weight: 400,
+
+  $label-font-size: 15px,
+  $field-font-size: 15px,
+  $button-font-size: 13px,
+
+
+    // 👉 Shadows
+  $shadow-key-umbra: (
+    0: (0 0 0 0 rgba(var(--v-shadow-key-umbra-color), 1)),
+    1: (0 2px 4px rgba(var(--v-shadow-key-umbra-color), 0.12)),
+    2: (0 2px 6px rgba(var(--v-shadow-key-umbra-color), 0.14)),
+    3: (0 3px 8px rgba(var(--v-shadow-key-umbra-color), 0.14)),
+    4: (0 3px 9px rgba(var(--v-shadow-key-umbra-color), 0.15)),
+    5: (0 4px 10px rgba(var(--v-shadow-key-umbra-color), 0.15)),
+    6: (0 4px 11px rgba(var(--v-shadow-key-umbra-color), 0.16)),
+    7: (0 4px 18px rgba(var(--v-shadow-key-umbra-color), 0.1)),
+    8: (0 4px 13px rgba(var(--v-shadow-key-umbra-color), 0.18)),
+    9: (0 5px 14px rgba(var(--v-shadow-key-umbra-color), 0.18)),
+    10: (0 5px 15px rgba(var(--v-shadow-key-umbra-color), 0.2)),
+  ),
+
+$shadow-key-penumbra: (
+        0: (0 0 transparent),
+        1: (0 0 transparent),
+        2: (0 0 transparent),
+        3: (0 0 transparent),
+        4: (0 0 transparent),
+        5: (0 0 transparent),
+        6: (0 0 transparent),
+        7: (0 0 transparent),
+        8: (0 0 transparent),
+        9: (0 0 transparent),
+        10: (0 0 transparent),
+),
+
+$shadow-key-ambient: (
+        0: (0 0 transparent),
+        1: (0 0 transparent),
+        2: (0 0 transparent),
+        3: (0 0 transparent),
+        4: (0 0 transparent),
+        5: (0 0 transparent),
+        6: (0 0 transparent),
+        7: (0 0 transparent),
+        8: (0 0 transparent),
+        9: (0 0 transparent),
+        10: (0 0 transparent),
+),
+
+   // 👉 Shadow opacity
+  $shadow-key-umbra-opacity: $shadow-key-umbra-opacity-custom,
+  $shadow-key-penumbra-opacity: $shadow-key-penumbra-opacity-custom,
+  $shadow-key-ambient-opacity: $shadow-key-ambient-opacity-custom,
+
+  $table-font-size: 15px,
+  $border-radius-root: 5px
+);

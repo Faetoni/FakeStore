@@ -1,0 +1,118 @@
+// 👉 Typography custom variables
+$typography-h5-font-size: 1.125rem;
+$typography-body-1-font-size: 0.9375rem;
+$typography-body-1-line-height: 1.375rem;
+
+
+// All non-component specific variables
+@use "vuetify" with (
+
+$typography: (
+        "h1": (
+                "size": 2.375rem,
+                "weight": 500,
+                "line-height": 3.25rem,
+                "letter-spacing": normal
+        ),
+        "h2": (
+                "size": 2rem,
+                "weight": 500,
+                "line-height": 2.75rem,
+                "letter-spacing": normal
+        ),
+        "h3": (
+                "size": 1.625rem,
+                "weight": 500,
+                "line-height": 2.25rem
+        ),
+        "h4": (
+                "size": 1.375rem,
+                "weight": 500,
+                "line-height": 1.875rem,
+                "letter-spacing": normal
+        ),
+        "h5": (
+                "size": $typography-h5-font-size,
+                "weight": 500,
+                "line-height": 1.5rem
+        ),
+        "h6":(
+                "size": 0.9375rem,
+                "line-height": 1.3125rem,
+                "letter-spacing": normal
+        ),
+        "body-1":(
+                "size": $typography-body-1-font-size,
+                "line-height": $typography-body-1-line-height,
+                "letter-spacing": normal
+        ),
+        "body-2": (
+                "size": 0.8125rem,
+                "line-height": 1.25rem,
+                "letter-spacing": normal
+        ),
+        "subtitle-2": (
+                "line-height": 1.32rem,
+                "letter-spacing": 0.0063rem
+        ),
+        "button": (
+                "size": 0.9375rem,
+                "weight": 500,
+                "line-height": 1.125rem,
+                "letter-spacing": 0.0269rem,
+                "text-transform": capitalize
+        ),
+        "caption":(
+                "size": 0.6875rem,
+                "line-height": 0.875rem,
+                "letter-spacing": normal
+        ),
+        "overline": (
+                "line-height": 2.66rem,
+                "letter-spacing": 0.0625rem,
+        )
+),
+
+// 👉 Shadows
+$shadow-key-umbra: (
+        0: (0 0 0 0 rgba(var(--v-shadow-key-umbra-color), 1)),
+        1: (0 2px 4px rgba(var(--v-shadow-key-umbra-color), 0.12)),
+        2: (0 2px 6px rgba(var(--v-shadow-key-umbra-color), 0.14)),
+        3: (0 3px 8px rgba(var(--v-shadow-key-umbra-color), 0.14)),
+        4: (0 3px 9px rgba(var(--v-shadow-key-umbra-color), 0.15)),
+        5: (0 4px 10px rgba(var(--v-shadow-key-umbra-color), 0.15)),
+        6: (0 4px 11px rgba(var(--v-shadow-key-umbra-color), 0.16)),
+        7: (0 4px 18px rgba(var(--v-shadow-key-umbra-color), 0.1)),
+        8: (0 4px 13px rgba(var(--v-shadow-key-umbra-color), 0.18)),
+        9: (0 5px 14px rgba(var(--v-shadow-key-umbra-color), 0.18)),
+        10: (0 5px 15px rgba(var(--v-shadow-key-umbra-color), 0.2))
+),
+
+$shadow-key-penumbra: (
+        0: (0 0 transparent),
+        1: (0 0 transparent),
+        2: (0 0 transparent),
+        3: (0 0 transparent),
+        4: (0 0 transparent),
+        5: (0 0 transparent),
+        6: (0 0 transparent),
+        7: (0 0 transparent),
+        8: (0 0 transparent),
+        9: (0 0 transparent),
+        10: (0 0 transparent)
+),
+
+$shadow-key-ambient: (
+        0: (0 0 transparent),
+        1: (0 0 transparent),
+        2: (0 0 transparent),
+        3: (0 0 transparent),
+        4: (0 0 transparent),
+        5: (0 0 transparent),
+        6: (0 0 transparent),
+        7: (0 0 transparent),
+        8: (0 0 transparent),
+        9: (0 0 transparent),
+        10: (0 0 transparent)
+),
+);
